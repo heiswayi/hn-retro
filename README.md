@@ -49,7 +49,7 @@ To build the static site for deployment:
 npm run build
 ```
 
-The generated site will be in the `_site` directory.
+The generated site will be in the `dist` directory.
 
 ## 📁 Project Structure
 
@@ -180,19 +180,19 @@ This theme generates static HTML files that can be deployed anywhere:
 1. Push your repository to GitHub
 2. Connect to Netlify
 3. Build command: `npm run build`
-4. Publish directory: `_site`
+4. Publish directory: `dist`
 
 ### Vercel
 
 1. Import your repository
 2. Framework preset: Other
 3. Build command: `npm run build`
-4. Output directory: `_site`
+4. Output directory: `dist`
 
 ### GitHub Pages
 
 1. Build locally: `npm run build`
-2. Push the `_site` directory to your `gh-pages` branch
+2. Push the `dist` directory to your `gh-pages` branch
 
 ## 🤝 Contributing
 
