@@ -2,6 +2,8 @@
 
 A minimal, retro-styled [Eleventy](https://www.11ty.dev/) theme featuring clean typography, SASS styling, and syntax highlighting. Perfect for developers who want a fast, no-nonsense blog with a nostalgic aesthetic.
 
+[**DEMO**](https://hn-retro.netlify.app/)
+
 ## ✨ Features
 
 - **Minimal & Fast** - Clean, lightweight design focused on content
