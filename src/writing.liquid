@@ -1,0 +1,21 @@
+---
+layout: base
+title: ./writing/
+---
+
+<div class="container">
+  <div class="box">
+    <p><a href="/"><img src="/assets/img/home.png" alt="Home" title="Back to Home"></a></p>
+    <h2 class="title colorize">./writing/</h2>
+    {% for post in collections.writing reversed %}
+    <div class="posts">
+      <div class="post">
+        {% if post.data.date %}
+        <span class="post-date">{{ post.data.date | date: "%Y-%m-%d" }}</span>
+        {% endif %}
+        &middot; <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

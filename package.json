@@ -1,0 +1,38 @@
+{
+  "name": "hn-retro",
+  "version": "1.0.0",
+  "description": "A minimal retro-styled Eleventy theme with SASS, syntax highlighting, and clean typography.",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heiswayi/hn-retro"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run sass:watch\" \"npm run 11ty:serve\"",
+    "build": "npm run sass:build && npm run 11ty:build",
+    "11ty:serve": "eleventy --serve",
+    "11ty:build": "eleventy",
+    "sass:watch": "sass --no-source-map --watch --style=compressed src/assets/_scss/style.scss src/assets/css/style.min.css",
+    "sass:build": "sass --no-source-map --style=compressed src/assets/_scss/style.scss src/assets/css/style.min.css"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "eleventy-theme",
+    "retro",
+    "minimal",
+    "sass",
+    "scss",
+    "syntax-highlighting",
+    "blog-theme",
+    "static-site-generator"
+  ],
+  "author": "Heiswayi Nrird",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "concurrently": "^9.1.2",
+    "sass": "^1.62.1"
+  }
+}

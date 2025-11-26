@@ -1,0 +1,14 @@
+---
+layout: base
+---
+<div class="container">
+  <div class="box">
+    <p><a href="/writing/"><img src="/assets/img/home.png" class="l" style="float:none; padding:0;" alt="Back" title="Back to Writing"></a></p>
+    <h1 class="post-title title">{{ title }}</h1>
+    {% if date %}
+    <p class="post-title-date post-date" style="color: #888; margin-bottom: 2rem;">{{ date | date: "%Y-%m-%d" }}</p>
+    {% endif %}
+    
+    {{ content }}
+  </div>
+</div>
